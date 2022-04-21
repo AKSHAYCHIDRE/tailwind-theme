@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,56 +12,68 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <div class="sm:m-6 space-y-6">
-        <div class="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
-          <Image class="absolute inset-0 h-full w-full object-cover opacity-30" src="/image.jpeg"  layout="fill" height="100px" width="100px" alt="People working on laptops" />
-          <div class="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
-          <div class="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-skin-base sm:text-4xl">
-              <span class="block">Focus on your content.</span>
-              <span class="block">We handle the distribution.</span>
+      <div className="sm:m-6 space-y-6">
+        <div className="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
+          <Image className="absolute inset-0 h-full w-full object-cover opacity-30" src="/image.jpeg"  layout="fill" height="100px" width="100px" alt="People working on laptops" />
+          <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
+          <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-extrabold text-skin-base sm:text-4xl">
+              <span className="block">Focus on your content.</span>
+              <span className="block">We handle the distribution.</span>
             </h2>
-            <p class="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-            <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                <a href="#" class="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
-                <a href="#" class="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+            <p className="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+            <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+              <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                <Link href="#" >
+                  <a className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
+                </Link>
+                <Link href="#">
+                  <a className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         
-        <div class="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
-          <Image class="absolute inset-0 h-full w-full object-cover opacity-30" src="/image.jpeg" layout="fill" height="100px" width="100px" alt="People working on laptops" />
-          <div class="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
-          <div class="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-skin-base sm:text-4xl">
-              <span class="block">Focus on your content.</span>
-              <span class="block">We handle the distribution.</span>
+        <div className="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
+          <Image className="absolute inset-0 h-full w-full object-cover opacity-30" src="/image.jpeg" layout="fill" height="100px" width="100px" alt="People working on laptops" />
+          <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
+          <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-extrabold text-skin-base sm:text-4xl">
+              <span className="block">Focus on your content.</span>
+              <span className="block">We handle the distribution.</span>
             </h2>
-            <p class="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-            <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                <a href="#" class="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
-                <a href="#" class="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+            <p className="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+            <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+              <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                <Link href="#" >
+                  <a className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
+                </Link>
+                <Link href="#">
+                  <a className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         
-        <div class="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
-          <Image class="absolute inset-0 h-full w-full object-cover opacity-30" src="/image.jpeg"  layout="fill" height="100px" width="100px" alt="People working on laptops" />
-          <div class="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
-          <div class="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-skin-base sm:text-4xl">
-              <span class="block">Focus on your content.</span>
-              <span class="block">We handle the distribution.</span>
+        <div className="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
+          <Image className="absolute inset-0 h-full w-full object-cover opacity-30" src="/image.jpeg"  layout="fill" height="100px" width="100px" alt="People working on laptops" />
+          <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
+          <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-extrabold text-skin-base sm:text-4xl">
+              <span className="block">Focus on your content.</span>
+              <span className="block">We handle the distribution.</span>
             </h2>
-            <p class="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-            <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                <a href="#" class="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
-                <a href="#" class="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+            <p className="mt-4 text-lg leading-6 text-skin-muted">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+            <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+              <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                <Link href="#" >
+                  <a className="text-skin-inverted bg-skin-button-accent hover:bg-skin-button-accent-hover flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm sm:px-8"> Get started </a>
+                </Link>
+                <Link href="#">
+                  <a className="text-skin-base bg-skin-button-muted flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Live demo </a>
+                </Link>
               </div>
             </div>
           </div>
