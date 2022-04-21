@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
       
       <div className="sm:m-6 space-y-6">
-        <div className="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
+        <div className="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl theme-yellow">
           <Image className="absolute inset-0 h-full w-full object-cover opacity-30" src="/image.jpeg"  layout="fill" height="100px" width="100px" alt="People working on laptops" />
           <div className="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
           <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
